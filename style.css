@@ -1,0 +1,65 @@
+/*======= GENERAL RULES =======*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+::placeholder{
+    text-align: center;
+}
+
+/*==== TAG STYLES =====*/
+
+body{
+    background-color: #ffffff;
+    background-repeat: repeat;
+    display: block;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main{
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.linkbtn{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 220%;
+    border-radius: 20px;
+    border-color: #112D4E;
+    border-width: medium;
+}
+
+.tag{
+    font-size: 250%;
+    color: #112D4E;
+    font-weight: bold;
+}
+
+.name{
+    font-weight: bolder;
+    font-size: 270%;
+    color: #112D4E;
+}
+
+.desc{
+    font-weight: lighter;
+    font-size: 150%;
+    color: #112D4E;
+}
+
+.edu{
+    font-weight: lighter;
+    font-size: 150%;
+    color: #112D4E;
+}
+
