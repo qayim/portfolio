@@ -1,0 +1,93 @@
+/*======= GENERAL RULES =======*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+::placeholder {
+    text-align: center;
+}
+
+/*==== TAG STYLES =====*/
+
+body {
+    background-color: #ffffff;
+    background-repeat: repeat;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dropdown {
+    margin-top: 5px;
+}
+
+.home-text {
+    color: #3F72AF;
+}
+
+.home-img {
+    text-align: center;
+}
+
+.se {
+    color: #112D4E;
+}
+
+.navbar-brand {
+    color: #F9F7F7;
+}
+
+.dropdown {
+    color: #F9F7F7;
+}
+
+.social-links {
+    margin: 5px;
+}
+
+.title {
+    color: #112D4E;
+
+}
+
+.sub {
+    color: #112D4E;
+}
+
+.row {
+    margin: 10px;
+}
+
+.col-sm-3 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.col-sm-4 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.btn {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.collapsible {
+    background-color: #DBE2EF;
+    color: #112D4E;
+    cursor: pointer;
+    padding: 2%;
+    width: 95%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    margin: 2%;
+}
