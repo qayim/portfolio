@@ -91,3 +91,27 @@ a {
     border-radius: 10px;
     margin: 2%;
 }
+
+.phoneContainer col shadow-sm{
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.5%;
+    height: 50%;
+    align-items: center;
+}
+
+.phone {
+    height: 200px;
+}
+
+@media (max-width: 769px) {
+    .phone {
+        height: 400px;
+    } 
+}
+
+@media (max-width: 550px) {
+    .phone {
+        height: 300px;
+    }
+}
