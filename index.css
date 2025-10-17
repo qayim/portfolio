@@ -17,34 +17,105 @@ body {
     display: block;
 }
 
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
+a:hover, a:active {
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Navigation bar starts */
+.navbar-brand {
+    color: #F9F7F7;
+}
+
+.navBtn {
+  background-color: #ffffff;
+  color: #112D4E;
+  width: 10%;
+  padding: 10px;
+  margin: 0.5%;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+}
+
+.navBtn.Mobile {
+  background-color: #ffffff;
+  color: #112D4E;
+  width: 100%;
+  padding: 10px;
+  margin: 0.5%;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+}
+
+
 .dropdown {
+    color: #F9F7F7;
     margin-top: 5px;
 }
 
+/* Navigation ends */
+
+/* Home/General bar starts */
 .home-text {
     color: #3F72AF;
 }
 
 .home-img {
-    text-align: center;
+    text-align: left;
 }
 
-.se {
-    color: #112D4E;
+/* Home/General  end */
+
+/* Hero section starts */
+.heroSection{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 2%;
 }
 
-.navbar-brand {
+.heroBox{
+    border: none;
+    width: 100%;
+    padding: 5%;
+    border-radius: 30px;
+    background-color: #112D4E;
+}
+
+.heroName {
     color: #F9F7F7;
 }
 
-.dropdown {
+.heroJobTitle {
     color: #F9F7F7;
 }
+
+.heroText{
+    font-size: 120%;
+    color: #D9D9D9;
+}
+/* Hero section ends */
+
+/* Project section starts */
+.projectCard {
+    text-align: center; 
+    justify-content: center;
+    margin: 1%;
+    padding: 0.5%;
+    background-color: #112D4E;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+/* Project section ends */
 
 .social-links {
     margin: 5px;
@@ -91,6 +162,380 @@ a {
     border-radius: 10px;
     margin: 2%;
 }
+
+/*Projects.html collapsible starts*/
+.hidden-section {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
+	opacity: 0;
+}
+
+.hidden-section.show {
+	max-height: 5000px;
+	opacity: 1;
+}
+
+.hidden-section1 {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
+	opacity: 0;
+}
+
+.hidden-section.show1 {
+	max-height: 5000px;
+	opacity: 1;
+}
+
+.toggle-btn {
+	display: block;
+	margin: 30px auto;
+	padding: 12px 35px;
+	background: #112D4E;
+	color: #DBE2EF;
+	border: none;
+	border-radius: 25px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+	background: #1a3d5f;
+}
+
+.toggle-btn:active {
+	transform: scale(0.98);
+}
+
+.toggle-btn::after {
+	content: ' ▼';
+	margin-left: 8px;
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+
+.toggle-btn.active::after {
+	transform: rotate(180deg);
+}
+
+/*Project.html collapsible ends*/
+
+/*aboutMe.html starts*/
+.whatIDoTitle{
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.skillAndToolsContent{
+    background: #DBE2EF;
+    color: #112D4E;
+    margin: 3%;
+    padding: 3%;
+    border-radius: 30px;
+}
+
+.skillAndToolsContentText{
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    padding: 3.5%;
+    font-size: 140%;
+}
+
+/*progress bar starts*/
+.skills-container {
+	width: 100%;
+	padding: 10px;
+}
+
+.skill-item {
+	margin-bottom: 20px;
+}
+
+.skill-item p {
+	margin-bottom: 8px;
+	font-weight: 500;
+	text-align: left;
+}
+
+.progress-bar {
+	width: 100%;
+	height: 20px;
+	background-color: #e0e0e0;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-fill {
+	height: 100%;
+	background: linear-gradient(90deg, #112D4E 0%, #3F72AF 100%);
+	border-radius: 10px;
+	transition: width 0.8s ease;
+	box-shadow: 0 2px 4px rgba(17, 45, 78, 0.3);
+}
+
+/* Optional: Add animation on page load */
+@keyframes fillBar {
+	from {
+		width: 0%;
+	}
+}
+
+.progress-fill {
+	animation: fillBar 1.5s ease-out;
+}
+
+/*progress bar css ends*/
+
+.aboutMeContentCard {
+    text-align: center;
+    margin: 0.5%; 
+    padding: 0.5%;
+    background-color: #112D4E;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 400px;
+}
+
+.journeyCard{
+    background-color: #112D4E;
+    padding: 5%;
+    border-radius: 30px;
+    margin-top: 2%;
+}
+
+.myJourneyContentCard {
+    display: grid;
+    place-items: center; 
+    text-align: center;
+    margin: 0.5%; 
+    padding: 0.5%;
+    background-color: #F9F7F7;
+    color: #112D4E;
+    border-radius: 30px;
+    width: 260px;
+    height: 120px;
+}
+
+.myJourneyContentTitle{
+    padding: auto;
+    margin: 2%;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.myJourneyContentText{
+    padding: auto;
+    margin: 2%;
+    font-size: 80%;
+}
+
+.seeMoreBtn {
+    display: grid;
+    place-items: center; 
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #F9F7F7;
+    width: 50%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0.01%;
+    padding-right: 0.01%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*aboutMe.html ends*/
+
+
+/*experience.html starts*/
+.supplementaryRoleContentCard {
+    text-align: center;
+    margin: 0.5%; 
+    padding: 0.5%;
+    background-color: #F9F7F7;
+    color: #112D4E;
+    border-radius: 30px;
+    width: 350px;
+}
+
+.supplementaryCardTitle{
+    color: #112D4E;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+.supplementaryCardSub{
+    display: grid;
+    place-items: center; 
+    text-align: center;
+    justify-content: center;
+    background: #112D4E;
+    color: #DBE2EF;
+    margin: 3%;
+    padding: auto;
+    border-radius: 30px;
+    height: 150px;
+}
+
+.contributionCardSubTitle{
+    font-weight: bold;
+    margin: auto;
+}
+
+.contributionCardSubTextNum{
+    margin: auto;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.awardContentCard {
+    margin: 0.5%; 
+    margin-top: 2%;
+    padding: 1%;
+    background-color: #F9F7F7;
+    color: #112D4E;
+    border-radius: 30px;
+}
+
+.awardCardSub{
+    display: grid;
+    place-items: center; 
+    text-align: center;
+    justify-content: center;
+    background: #112D4E;
+    color: #DBE2EF;
+    margin: 1%;
+    padding: auto;
+    border-radius: 30px;
+    height: 80px;
+    width: 220px;
+}
+
+.awardCardTitle{
+    color: #F9F7F7;
+    font-size: 100%;
+    font-weight: bold;
+    margin: auto;
+}
+
+.awardCardSubTitle{
+    font-weight: bold;
+    margin: auto;
+}
+
+.journeyTitle{
+    margin-top: 3%;
+}
+/*experience.html ends*/
+
+/*contactMe.html starts*/
+
+.feedbackCard{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 0.5%; 
+    padding: 2%;
+    height: 450px;
+    background-color: #112D4E;
+    color: #F9F7F7;
+    border-radius: 30px;
+}
+
+.feedbackText{
+    font-weight: bold;
+}
+
+.feedbackName{
+    font-size: 120%;
+}
+
+.feedbackPosition{
+}
+
+
+/*contactMe.html ends*/
+
+
+/**/
+/* Default styles for desktop */
+nav {
+  display: flex; /* Or other layout */
+}
+
+nav a {
+  display: inline-block;
+  padding: 14px 16px;
+}
+
+/* Hide hamburger icon on larger screens */
+nav .icon {
+  display: none;
+}
+
+.icon.Mobile{
+    display: none;
+}
+
+.icon{
+    color: #F9F7F7;
+}
+
+.icon1{
+    display: none;
+}
+
+.workHiltiTitle{
+    margin-top: 10%;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 600px) {
+    nav a{ /* Hide links except the first one */
+        display: none;
+    }
+
+    nav a.icon {
+        display: block; /* Show the hamburger icon */
+    }
+
+    /* Make nav behave differently on mobile */
+    nav.responsive {
+        position: relative;
+        display: block;
+    }
+
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .icon1{
+        color: #F9F7F7;
+    }
+
+    .heroSection{
+        margin-top: 10%;
+    }
+    .workHiltiTitle{
+        margin-top: 40%;
+    }
+
+    .journeyTitle{
+        margin-top: 20%;
+    }
+}
+/**/
+
 
 .phoneContainer col shadow-sm{
     text-align: center;
