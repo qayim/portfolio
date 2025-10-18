@@ -172,7 +172,7 @@ a:hover, a:active {
 }
 
 .hidden-section.show {
-	max-height: 5000px;
+	max-height: 7000px;
 	opacity: 1;
 }
 
@@ -184,7 +184,7 @@ a:hover, a:active {
 }
 
 .hidden-section.show1 {
-	max-height: 5000px;
+	max-height: 7000px;
 	opacity: 1;
 }
 
@@ -506,8 +506,8 @@ nav .icon {
 
     /* Make nav behave differently on mobile */
     nav.responsive {
-        position: relative;
-        display: block;
+        position: absolute;
+        display: absolute;
     }
 
     nav.responsive a {
@@ -528,6 +528,16 @@ nav .icon {
 
     .journeyTitle{
         margin-top: 20%;
+    }
+
+    .feedbackCard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        padding: 10%;
+        height: 550px;
     }
 }
 /**/
