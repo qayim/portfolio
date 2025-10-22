@@ -301,13 +301,24 @@ a:hover, a:active {
     background-color: #112D4E;
     color: #ffffff;
     border-radius: 30px;
-    width: 400px;
+    width: 30%;
+}
+
+.aboutMeContentTextCard {
+    text-align: center;
+    margin: 0.5%; 
+    padding: 0.5%;
+    background-color: #112D4E;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 22%;
 }
 
 .journeyCard{
     background-color: #112D4E;
     padding: 5%;
     border-radius: 30px;
+    width: 100%;
     margin-top: 2%;
 }
 
@@ -315,12 +326,12 @@ a:hover, a:active {
     display: grid;
     place-items: center; 
     text-align: center;
-    margin: 0.5%; 
+    margin: 0.5%;
     padding: 0.5%;
     background-color: #F9F7F7;
     color: #112D4E;
     border-radius: 30px;
-    width: 260px;
+    width: 22%;
     height: 120px;
 }
 
@@ -364,7 +375,7 @@ a:hover, a:active {
     background-color: #F9F7F7;
     color: #112D4E;
     border-radius: 30px;
-    width: 350px;
+    width: 30%;
 }
 
 .supplementaryCardTitle{
@@ -492,11 +503,53 @@ nav .icon {
 }
 
 .workHiltiTitle{
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
+@media (max-width: 1330px){
+    .laptop {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 1200) {
+    .navBtn {
+        font-size: 100%;
+        width: 200px;
+        font-weight: bold;
+    }
+
+    .aboutMeContentTextCard {
+        text-align: center;
+        margin: 0.5%; 
+        padding: 0.5%;
+        background-color: #112D4E;
+        color: #ffffff;
+        border-radius: 30px;
+        width: 400px;
+    }
+}
+
+.phoneContainer col shadow-sm{
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.5%;
+    height: 50%;
+    align-items: center;
+}
+
+.phone {
+    height: 200px;
+}
+
+.laptop {
+    height: 200px;
+}
+
+
+
 /* Styles for smaller screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1205px) {
     nav a{ /* Hide links except the first one */
         display: none;
     }
@@ -516,6 +569,7 @@ nav .icon {
         display: block;
         text-align: left;
     }
+
     .icon1{
         color: #F9F7F7;
     }
@@ -524,11 +578,11 @@ nav .icon {
         margin-top: 10%;
     }
     .workHiltiTitle{
-        margin-top: 40%;
+        margin-top: 10%;
     }
 
     .journeyTitle{
-        margin-top: 20%;
+        margin-top: 5%;
     }
 
     .feedbackCard{
@@ -537,33 +591,103 @@ nav .icon {
         align-items: center;
         align-self: center;
         text-align: center;
-        padding: 10%;
+        padding: 2%;
         height: 550px;
+    }
+
+    .aboutMeContentCard {
+        text-align: center;
+        margin: 0.5%; 
+        padding: 0.5%;
+        background-color: #112D4E;
+        color: #ffffff;
+        border-radius: 30px;
+        width: 80%;
+    }
+
+    .aboutMeContentTextCard {
+        text-align: center;
+        margin: 0.5%; 
+        padding: 0.5%;
+        background-color: #112D4E;
+        color: #ffffff;
+        border-radius: 30px;
+        width: 100%;
     }
 }
 /**/
 
+@media (max-width: 992px){
+    .workHiltiTitle {
+        margin-top: 20%;
+    }
 
-.phoneContainer col shadow-sm{
-    text-align: center;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: 50%;
-    align-items: center;
+    .myJourneyContentCard {
+        width: 100%;
+    }
+
+    .aboutMeContentCard {
+        text-align: center;
+        margin: 0.5%; 
+        padding: 0.5%;
+        background-color: #112D4E;
+        color: #ffffff;
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .supplementaryRoleContentCard {
+        text-align: center;
+        margin: 0.5%; 
+        padding: 0.5%;
+        background-color: #F9F7F7;
+        color: #112D4E;
+        border-radius: 30px;
+        width: 100%;
+    }
 }
 
-.phone {
-    height: 200px;
+@media (max-width: 851px){
+    .aboutMeContentTextCard {
+        text-align: center;
+        margin: 0.5%; 
+        padding: 0.5%;
+        background-color: #112D4E;
+        color: #ffffff;
+        border-radius: 30px;
+        width: 100%;
+    }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
     .phone {
         height: 400px;
     } 
+
+    .laptop {
+        height: 200px;
+    }
+
+    .workHiltiTitle{
+        margin-top: 25%;
+    }
+
+    .journeyTitle{
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 550px) {
     .phone {
         height: 300px;
     }
+
+    .laptop {
+        height: 200px;
+    }
+
+    .workHiltiTitle{
+        margin-top: 30%;
+    }
+
 }
