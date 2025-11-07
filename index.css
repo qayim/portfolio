@@ -503,7 +503,7 @@ nav .icon {
 }
 
 .workHiltiTitle{
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 @media (max-width: 1330px){
@@ -512,7 +512,11 @@ nav .icon {
     }
 }
 
-@media screen and (max-width: 1200) {
+@media (max-width:){
+
+}
+
+@media screen and (max-width: 1330) {
     .navBtn {
         font-size: 100%;
         width: 200px;
@@ -543,7 +547,7 @@ nav .icon {
 }
 
 .laptop {
-    height: 200px;
+    height: 180px;
 }
 
 
