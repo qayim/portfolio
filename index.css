@@ -188,6 +188,23 @@ a:hover, a:active {
 	opacity: 1;
 }
 
+.hidden-section2 {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
+	opacity: 0;
+}
+
+.hidden-section.show2 {
+	max-height: 7000px;
+	opacity: 1;
+}
+
+.hidden-section.show1 {
+	max-height: 7000px;
+	opacity: 1;
+}
+
 .toggle-btn {
 	display: block;
 	margin: 30px auto;
@@ -332,20 +349,22 @@ a:hover, a:active {
     color: #112D4E;
     border-radius: 30px;
     width: 22%;
-    height: 120px;
+    height: 150px;
 }
 
 .myJourneyContentTitle{
-    padding: auto;
-    margin: 2%;
     font-weight: bold;
     font-size: 120%;
+    margin-bottom: 0.05rem;
+    line-height: 1.1;
+    text-align: center;
 }
 
 .myJourneyContentText{
-    padding: auto;
-    margin: 2%;
     font-size: 80%;
+    margin-top: 0.05rem;
+    line-height: 1.15;
+    text-align: center;
 }
 
 .seeMoreBtn {
@@ -384,17 +403,28 @@ a:hover, a:active {
     font-weight: bold;
 }
 
-.supplementaryCardSub{
+.supplementaryCardSub {
     display: grid;
     place-items: center; 
     text-align: center;
-    justify-content: center;
     background: #112D4E;
     color: #DBE2EF;
     margin: 3%;
-    padding: auto;
     border-radius: 30px;
-    height: 150px;
+    height: 170px;
+}
+
+.supplementaryCardSubText {
+    display: flex;
+    flex-direction: column; /* Stacks the p tags vertically */
+    align-items: center;    /* Centers the p tags horizontally */
+    justify-content: center; /* Centers them vertically within the div */
+    width: 100%;            /* Ensures it takes up the full width of the parent */
+}
+
+/* Optional: Clean up default margins for a tighter look */
+.supplementaryCardSubText p {
+    margin: 2px 0;
 }
 
 .contributionCardSubTitle{
