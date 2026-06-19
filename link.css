@@ -1,65 +1,53 @@
-/*======= GENERAL RULES =======*/
 * {
     padding: 0;
     margin: 0;
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
 }
 
-::placeholder{
-    text-align: center;
-}
-
-/*==== TAG STYLES =====*/
-
-body{
+body {
     background-color: #ffffff;
-    background-repeat: repeat;
-    display: block;
 }
 
-a{
+a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.main{
+.main {
     text-align: center;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 2% auto;
     padding: 2%;
 }
 
-.linkbtn{
-    margin-top: 2%;
-    margin-bottom: 2%;
+.profile-photo {
+    width: 20%;
+}
+
+.linkbtn {
+    margin: 2% 0;
     font-size: 220%;
     border-radius: 20px;
     border-color: #112D4E;
     border-width: medium;
+    color: #112D4E;
+    background: #DBE2EF;
 }
 
-.tag{
+.tag {
     font-size: 250%;
     color: #112D4E;
     font-weight: bold;
 }
 
-.name{
+.name {
     font-weight: bolder;
     font-size: 270%;
     color: #112D4E;
 }
 
-.desc{
+.desc,
+.edu {
     font-weight: lighter;
     font-size: 150%;
     color: #112D4E;
 }
-
-.edu{
-    font-weight: lighter;
-    font-size: 150%;
-    color: #112D4E;
-}
-

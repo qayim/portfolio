@@ -5,13 +5,9 @@
 	<title>Qayim's Website</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="index.css">
 	<link rel="icon" href="img/icon.ico">
 </head>
 
@@ -19,14 +15,14 @@
 <body class="bg-light">
 
 	<!--Navbar start-->
-	<nav class="navbar fixed-top shadow-sm" style="background: #112D4E">
+	<nav class="navbar fixed-top shadow-sm bg-nav">
 		<div class="container-lg">
 			<a href="javascript:void(0);" class="icon1" onclick="myFunction()">
 				<p>=</p>
 			</a>
 		</div>
 		<div class="container-lg">
-			<a href="https://qayim.github.io/portfolio" class="navBtn" style="font-weight: bold;">Homepage</a>
+			<a href="https://qayim.github.io/portfolio" class="navBtn active-page">Homepage</a>
 			<a href="https://qayim.github.io/portfolio/projects" class="navBtn">Projects</a>
 			<a href="https://qayim.github.io/portfolio/aboutMe" class="navBtn">About Me</a>
 			<a href="https://qayim.github.io/portfolio/experience" class="navBtn">Experiences</a>
@@ -42,13 +38,13 @@
 	<!--Navbar end-->
 
 	<!--Section 1: Hero and Projects-->
-	<section class="home py-5" style="background: #F9F7F7">
+	<section class="home py-5 bg-page">
 		<!--Hero starts-->
-		<div class="container-lg heroSection" style="justify-content: center;">
+		<div class="container-lg heroSection">
 			<div class="row min-vh-50 heroBox">
 				<div class="col-xl-4 mt-5 mt-md-0">
 					<div class="home-img">
-						<img src="img/profilepic.png" alt="profile img" style="width:300px">
+						<img src="img/profilepic.png" alt="Qayim Norizan profile photo" class="profile-img">
 					</div>
 				</div>
 				<div class="col-xl-8 mt-5 mt-md-0">
@@ -65,8 +61,6 @@
 						<p class="mt-4 heroText">
 							Let's make your workflow less 'meh' and more 'magic'
 						</p>
-						<p> </p>
-
 					</div>
 				</div>
 			</div>
@@ -76,7 +70,7 @@
 
 		<!--Project starts-->
 		<div class="container">
-			<div class="col-lg-8" style="margin-top: 2%;">
+			<div class="col-lg-8 section-heading">
 				<div class="section-title">
 					<h2 class="fw-bold mb-5">Projects</h2>
 				</div>
@@ -85,33 +79,29 @@
 
 
 		
-		<div class="row" style="justify-content: center;">
-			<div class="col-sm-12 col-xl-3  projectCard">
+		<div class="row centered-row">
+			<div class="col-sm-12 col-xl-3 projectCard">
 				<p class="fs-3">ITM</p>
-				<img class="laptop" src="img/projects/itm.png">
+				<img class="laptop" src="img/projects/itm.png" alt="ITM ERP system">
 				<p>In house ERP System built for multiple industries with current use case niche for motorcycles and waste management.</p>
 			</div>
-			<div class="col-sm-12 col-xl-3  projectCard">
+			<div class="col-sm-12 col-xl-3 projectCard">
 				<p class="fs-3">T-Rex</p>
-				<img class="laptop" src="img/projects/trex.png">
+				<img class="laptop" src="img/projects/trex.png" alt="T-Rex repair tracking system">
 				<p>Tranparent Repair Experience provides customers with real time updates on the repair of their tool for each step of the journey.</p>
 			</div>
-			<div class="col-sm-12 col-xl-3  projectCard">
+			<div class="col-sm-12 col-xl-3 projectCard">
 				<p class="fs-3">Cryptoing</p>
-				<img class="phone" src="img/phone view thumbnail/cryptoing.png">
+				<img class="phone" src="img/phone view thumbnail/cryptoing.png" alt="Cryptoing mobile app">
 				<p>Cryptoing is a project in collaboration with AmBank that helps investors select suitable cryptocurrencies based on prediction data using AI and ML.</p>
 			</div>
 		</div>
 		<!--Project ends -->
-			<!-- TOGGLE BUTTON -->
-			<button class="toggle-btn" id="toggleBtn1" onclick="window.location.href='https://qayim.github.io/portfolio/projects';">
-				Show More
-			</button>
-			<!--TOGGLE BUTTON ENDS-->
+			<a href="https://qayim.github.io/portfolio/projects" class="toggle-btn">Show More</a>
 
 	<!--Feedback starts-->
 		<div class="container">
-			<div class="col-lg-8" style="margin-top: 2%;">
+			<div class="col-lg-8 section-heading">
 				<div class="section-title">
 					<h2 class="fw-bold mb-5">Feedbacks</h2>
 				</div>
@@ -119,7 +109,7 @@
 		</div>
 
 		
-		<div class="row" style="justify-content: center;">
+		<div class="row centered-row">
 			<div class="col-sm-12 col-xl-3 feedbackCard">
 				<div class="row">
 					<div>
@@ -133,7 +123,7 @@
 
 						<p class="feedbackName">Mike Pelzer</p>
 						<p class="feedbackPosition">Head of AMS Process Management</p>
-						<a href="#" class="btn px-3"style="color:#DBE2EF; background: #D2051E">HILTI</a>
+						<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 					</div>
 				</div>
 			</div>
@@ -150,7 +140,7 @@
 					<div>
 						<p class="feedbackName">Martin Schoeder</p>
 						<p class="feedbackPosition">Head of Product IT</p>
-						<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+						<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 					</div>
 				</div>
 			</div>
@@ -166,7 +156,7 @@
 					<div>
 						<p class="feedbackName">Stefan Bauert</p>
 						<p class="feedbackPosition">Head of Subscription & Development Platform IT</p>
-						<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+						<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 					</div>
 				</div>
 			</div>
@@ -181,7 +171,7 @@
 		<!--HIDDEN feedback SECTION STARTS-->
 		<div class="hidden-section" id="hiddenSection">
 
-			<div class="row" style="justify-content: center;">
+			<div class="row centered-row">
 				<div class="col-sm-12 col-xl-3 feedbackCard">
 					<div class="row">
 						<div>
@@ -193,7 +183,7 @@
 						<div>
 							<p class="feedbackName">Mike Pelzer</p>
 							<p class="feedbackPosition">Head of AMS Process Management</p>
-							<a href="#" class="btn px-3"style="color:#DBE2EF; background: #D2051E">HILTI</a>
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 						</div>
 					</div>
 				</div>
@@ -211,7 +201,7 @@
 						<div>
 							<p class="feedbackName">Wyin Ping Lim</p>
 							<p class="feedbackPosition">IT Product Owner Customer Experience Repair</p>
-							<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 						</div>
 					</div>
 				</div>
@@ -229,13 +219,13 @@
 						<div>
 							<p class="feedbackName">Wyin Ping Lim</p>
 							<p class="feedbackPosition">IT Product Owner Customer Experience Repair</p>
-							<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row" style="justify-content: center;">
+			<div class="row centered-row">
 				<div class="col-sm-12 col-xl-3 feedbackCard">
 					<div class="row">
 						<div>
@@ -250,7 +240,7 @@
 						<div>
 							<p class="feedbackName">Megan Hughes</p>
 							<p class="feedbackPosition">Customer Tool Service Specialist</p>
-							<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 						</div>
 					</div>
 				</div>
@@ -267,7 +257,7 @@
 						<div>
 							<p class="feedbackName">Devavighen Vasudevan</p>
 							<p class="feedbackPosition">IT Business Analyst AMS</p>
-							<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 						</div>
 					</div>
 				</div>
@@ -286,13 +276,13 @@
 						<div>
 							<p class="feedbackName">Jia Hao Tan</p>
 							<p class="feedbackPosition">IT Business Analyst Product Lifecycle</p>
-							<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row" style="justify-content: center;">
+			<div class="row centered-row">
 				<div class="col-sm-12 col-xl-3 feedbackCard">
 					<div class="row">
 						<div>
@@ -306,7 +296,7 @@
 						<div>
 							<p class="feedbackName">Sia Wen Quan</p>
 							<p class="feedbackPosition">IT Business Analyst AMS</p>
-							<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 						</div>
 					</div>
 				</div>
@@ -314,7 +304,7 @@
 				<div class="col-sm-12 col-xl-3 feedbackCard">
 					<div class="row">
 						<div>
-							<p class="feedbackText" style="font-size: 80%;">
+							<p class="feedbackText feedbackText-small">
 								Qayim is such a fun and vibrant person to work with! He always gives his all, often going 
 								the extra mile without being asked. For instance, his documentation is the perfect example 
 								of his passion towards his work. It's extremely precise and detailed which is super helpful 
@@ -327,7 +317,7 @@
 						<div>
 							<p class="feedbackName">Marcus Edward</p>
 							<p class="feedbackPosition">IT Business Analyst PDP</p>
-							<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>
 						</div>
 					</div>
 				</div>
@@ -345,7 +335,7 @@
 						<div>
 							<p class="feedbackName">Yi Shen Goi</p>
 							<p class="feedbackPosition">Backend Developer Strategic Marketing</p>
-							<a href="#" class="btn px-3" style="color:#DBE2EF; background: #D2051E">HILTI</a>	
+							<a href="#" class="btn px-3 btn-hilti">HILTI</a>	
 						</div>
 					</div>
 				</div>
@@ -360,20 +350,20 @@
 			<!--HIDDEN proof SECTION STARTS-->
 			<div class="hidden-section" id="hiddenSection1">
 				<!--Source  starts-->
-				<h1 style="color: #F9F7F7; font-weight: bold;">Source</h1>
+				<h1 class="source-heading">Source</h1>
 
 					<!--Workday feedback starts-->
 					<div class="container">
 						<div class="col-lg awardContentCard">
-							<h1 style="color: #112D4E; font-weight: bold; margin-left: 2%;">Workday Feedbacks</h1>
+							<h1 class="section-heading-dark">Workday Feedbacks</h1>
 							<div class="col">
 								<div class="home-img">
-									<img src="img/feedbacks/workdayFeedback1.png" alt="profile img" style="width: 95%; display: block; margin-left: auto; margin-right: auto;">
+									<img src="img/feedbacks/workdayFeedback1.png" alt="Workday feedback screenshot 1" class="feedback-img">
 								</div>
 							</div>
 							<div class="col">
 								<div class="home-img">
-									<img src="img/feedbacks/workdayFeedback2.png" alt="profile img" style="width: 95%; display: block; margin-left: auto; margin-right: auto;">
+									<img src="img/feedbacks/workdayFeedback2.png" alt="Workday feedback screenshot 2" class="feedback-img">
 								</div>
 							</div>
 						</div>
@@ -383,20 +373,20 @@
 					<!--Teams feedback starts-->
 					<div class="container">
 						<div class="col-lg awardContentCard">
-							<h1 style="color: #112D4E; font-weight: bold; margin-left: 2%;">Teams Feedbacks</h1>
+							<h1 class="section-heading-dark">Teams Feedbacks</h1>
 							<div class="col">
 								<div class="home-img">
-									<img src="img/feedbacks/teamsFeedback1.png" alt="profile img" style="width: 95%; display: block; margin-left: auto; margin-right: auto;">
+									<img src="img/feedbacks/teamsFeedback1.png" alt="Teams feedback screenshot 1" class="feedback-img">
 								</div>
 							</div>
 							<div class="col">
 								<div class="home-img">
-									<img src="img/feedbacks/teamsFeedback2.png" alt="profile img" style="width: 95%; display: block; margin-left: auto; margin-right: auto;">
+									<img src="img/feedbacks/teamsFeedback2.png" alt="Teams feedback screenshot 2" class="feedback-img">
 								</div>
 							</div>
 							<div class="col">
 								<div class="home-img">
-									<img src="img/feedbacks/teamsFeedback3.png" alt="profile img" style="width: 95%; display: block; margin-left: auto; margin-right: auto;">
+									<img src="img/feedbacks/teamsFeedback3.png" alt="Teams feedback screenshot 3" class="feedback-img">
 								</div>
 							</div>
 						</div>
@@ -414,65 +404,7 @@
 
 	</section>
 	<!--Section 1: Hero and Projects ends-->
-	<script>
-		function toggleExtras() {
-			const section = document.getElementById('hiddenSection');
-			const btn = document.getElementById('toggleBtn');
-			
-			section.classList.toggle('show');
-			btn.classList.toggle('active');
-			
-			if (section.classList.contains('show')) {
-				btn.textContent = 'Show Less';
-			} else {
-				btn.textContent = 'Show More';
-			}
-		}
-
-		function toggleExtras1() {
-			const section = document.getElementById('hiddenSection1');
-			const btn = document.getElementById('toggleBtn1');
-			
-			section.classList.toggle('show1');
-			btn.classList.toggle('active1');
-			
-			if (section.classList.contains('show1')) {
-				btn.textContent = 'Show Less';
-			} else {
-				btn.textContent = 'Show More';
-			}
-		}
-
-		function myFunction() {
-			window.scrollTo(0, 0);
-			var x = document.getElementsByTagName("nav")[0]; // Get the <nav> element
-			var nav0 = document.getElementsByClassName("navBtn")[0];
-			var nav1 = document.getElementsByClassName("navBtn")[1];
-			var nav2 = document.getElementsByClassName("navBtn")[2];
-			var nav3 = document.getElementsByClassName("navBtn")[3];
-			var nav4 = document.getElementsByClassName("navBtn")[4];
-			var icon = document.getElementsByClassName("icon")[0]
-
-			if (x.className.indexOf("responsive") == -1) {
-				x.className += " responsive";
-				nav0.className += " Mobile";
-				nav1.className += " Mobile";
-				nav2.className += " Mobile";
-				nav3.className += " Mobile";
-				nav4.className += " Mobile";
-				icon.className += " Mobile";
-			} else {
-				x.className = x.className.replace(" responsive", "");
-				nav0.className = nav0.className.replace(" Mobile", "");
-				nav1.className = nav1.className.replace(" Mobile", "");
-				nav2.className = nav2.className.replace(" Mobile", "");
-				nav3.className = nav2.className.replace(" Mobile", "");
-				nav4.className = nav4.className.replace(" Mobile", "");
-				icon.className = icon.className.replace(" Mobile", "");
-			}
-		}
-	</script>
-	
+	<script src="js/main.js"></script>
 </body>
 
 </html>

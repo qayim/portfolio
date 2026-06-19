@@ -1,69 +1,76 @@
-/*======= GENERAL RULES =======*/
+/* ======= GENERAL ======= */
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 ::placeholder {
     text-align: center;
 }
 
-/*==== TAG STYLES =====*/
-
 body {
     background-color: #ffffff;
-    background-repeat: repeat;
     display: block;
 }
-
 
 a {
     color: inherit;
     text-decoration: none;
 }
 
-a:hover, a:active {
-  color: inherit;
-  font-weight: bold;
+a:hover,
+a:active {
+    color: inherit;
+    font-weight: bold;
 }
 
-/* Navigation bar starts */
+/* ======= NAVIGATION ======= */
 .navbar-brand {
     color: #F9F7F7;
 }
 
 .navBtn {
-  background-color: #ffffff;
-  color: #112D4E;
-  width: 10%;
-  padding: 10px;
-  margin: 0.5%;
-  text-align: center;
-  border: none;
-  border-radius: 30px;
+    background-color: #ffffff;
+    color: #112D4E;
+    width: 10%;
+    padding: 10px;
+    margin: 0.5%;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
 }
 
 .navBtn.Mobile {
-  background-color: #ffffff;
-  color: #112D4E;
-  width: 100%;
-  padding: 10px;
-  margin: 0.5%;
-  text-align: center;
-  border: none;
-  border-radius: 30px;
+    width: 100%;
 }
 
+nav {
+    display: flex;
+}
 
-.dropdown {
+nav a {
+    display: inline-block;
+    padding: 14px 16px;
+}
+
+nav .icon {
+    display: none;
+}
+
+.icon {
     color: #F9F7F7;
-    margin-top: 5px;
 }
 
-/* Navigation ends */
+.icon.Mobile {
+    display: none;
+}
 
-/* Home/General bar starts */
+.icon1 {
+    display: none;
+}
+
+/* ======= HERO ======= */
 .home-text {
     color: #3F72AF;
 }
@@ -72,17 +79,14 @@ a:hover, a:active {
     text-align: left;
 }
 
-/* Home/General  end */
-
-/* Hero section starts */
-.heroSection{
+.heroSection {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     margin-top: 2%;
 }
 
-.heroBox{
+.heroBox {
     border: none;
     width: 100%;
     padding: 5%;
@@ -90,486 +94,25 @@ a:hover, a:active {
     background-color: #112D4E;
 }
 
-.heroName {
-    color: #F9F7F7;
-}
-
+.heroName,
 .heroJobTitle {
     color: #F9F7F7;
 }
 
-.heroText{
+.heroText {
     font-size: 120%;
     color: #D9D9D9;
 }
-/* Hero section ends */
 
-/* Project section starts */
+/* ======= PROJECTS ======= */
 .projectCard {
-    text-align: center; 
+    text-align: center;
     justify-content: center;
     margin: 1%;
     padding: 0.5%;
     background-color: #112D4E;
     color: #ffffff;
     border-radius: 30px;
-}
-
-/* Project section ends */
-
-.social-links {
-    margin: 5px;
-}
-
-.title {
-    color: #112D4E;
-
-}
-
-.sub {
-    color: #112D4E;
-}
-
-.row {
-    margin: 10px;
-}
-
-.col-sm-3 {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.col-sm-4 {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.btn {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-.collapsible {
-    background-color: #DBE2EF;
-    color: #112D4E;
-    cursor: pointer;
-    padding: 2%;
-    width: 95%;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-    margin: 2%;
-}
-
-/*Projects.html collapsible starts*/
-.hidden-section {
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
-	opacity: 0;
-}
-
-.hidden-section.show {
-	max-height: 7000px;
-	opacity: 1;
-}
-
-.hidden-section1 {
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
-	opacity: 0;
-}
-
-.hidden-section.show1 {
-	max-height: 7000px;
-	opacity: 1;
-}
-
-.hidden-section2 {
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
-	opacity: 0;
-}
-
-.hidden-section.show2 {
-	max-height: 7000px;
-	opacity: 1;
-}
-
-.hidden-section.show1 {
-	max-height: 7000px;
-	opacity: 1;
-}
-
-.toggle-btn {
-	display: block;
-	margin: 30px auto;
-	padding: 12px 35px;
-	background: #112D4E;
-	color: #DBE2EF;
-	border: none;
-	border-radius: 25px;
-	font-size: 16px;
-	font-weight: bold;
-	cursor: pointer;
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-	transition: all 0.3s ease;
-}
-
-.toggle-btn:hover {
-	transform: scale(1.05);
-	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-	background: #1a3d5f;
-}
-
-.toggle-btn:active {
-	transform: scale(0.98);
-}
-
-.toggle-btn::after {
-	content: ' ▼';
-	margin-left: 8px;
-	display: inline-block;
-	transition: transform 0.3s ease;
-}
-
-.toggle-btn.active::after {
-	transform: rotate(180deg);
-}
-
-/*Project.html collapsible ends*/
-
-/*aboutMe.html starts*/
-.whatIDoTitle{
-    font-weight: 600;
-    font-size: 120%;
-}
-
-.skillAndToolsContent{
-    background: #DBE2EF;
-    color: #112D4E;
-    margin: 3%;
-    padding: 3%;
-    border-radius: 30px;
-}
-
-.skillAndToolsContentText{
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-    padding: 3.5%;
-    font-size: 120%;
-}
-
-/*progress bar starts*/
-.skills-container {
-	width: 100%;
-	padding: 10px;
-}
-
-.skill-item {
-	margin-bottom: 20px;
-}
-
-.skill-item p {
-	margin-bottom: 8px;
-	font-weight: 500;
-	text-align: left;
-}
-
-.progress-bar {
-	width: 100%;
-	height: 20px;
-	background-color: #e0e0e0;
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.progress-fill {
-	height: 100%;
-	background: linear-gradient(90deg, #112D4E 0%, #3F72AF 100%);
-	border-radius: 10px;
-	transition: width 0.8s ease;
-	box-shadow: 0 2px 4px rgba(17, 45, 78, 0.3);
-}
-
-/* Optional: Add animation on page load */
-@keyframes fillBar {
-	from {
-		width: 0%;
-	}
-}
-
-.progress-fill {
-	animation: fillBar 1.5s ease-out;
-}
-
-/*progress bar css ends*/
-
-.aboutMeContentCard {
-    text-align: center;
-    margin: 0.5%; 
-    padding: 0.5%;
-    background-color: #112D4E;
-    color: #ffffff;
-    border-radius: 30px;
-    width: 30%;
-}
-
-.aboutMeContentTextCard {
-    text-align: center;
-    margin: 0.5%; 
-    padding: 0.5%;
-    background-color: #112D4E;
-    color: #ffffff;
-    border-radius: 30px;
-    width: 22%;
-}
-
-.journeyCard{
-    background-color: #112D4E;
-    padding: 5%;
-    border-radius: 30px;
-    width: 100%;
-    margin-top: 2%;
-}
-
-.myJourneyContentCard {
-    display: grid;
-    place-items: center; 
-    text-align: center;
-    margin: 0.5%;
-    padding: 0.5%;
-    background-color: #F9F7F7;
-    color: #112D4E;
-    border-radius: 30px;
-    width: 22%;
-    height: 150px;
-}
-
-.myJourneyContentTitle{
-    font-weight: bold;
-    font-size: 120%;
-    margin-bottom: 0.05rem;
-    line-height: 1.1;
-    text-align: center;
-}
-
-.myJourneyContentText{
-    font-size: 80%;
-    margin-top: 0.05rem;
-    line-height: 1.15;
-    text-align: center;
-}
-
-.seeMoreBtn {
-    display: grid;
-    place-items: center; 
-    text-align: center;
-    justify-content: center;
-    border-radius: 30px;
-    background-color: #F9F7F7;
-    width: 50%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 0.01%;
-    padding-right: 0.01%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*aboutMe.html ends*/
-
-
-/*experience.html starts*/
-.supplementaryRoleContentCard {
-    text-align: center;
-    margin: 0.5%; 
-    padding: 0.5%;
-    background-color: #F9F7F7;
-    color: #112D4E;
-    border-radius: 30px;
-    width: 30%;
-}
-
-.supplementaryCardTitle{
-    color: #112D4E;
-    font-size: 160%;
-    font-weight: bold;
-}
-
-.supplementaryCardSub {
-    display: grid;
-    place-items: center; 
-    text-align: center;
-    background: #112D4E;
-    color: #DBE2EF;
-    margin: 3%;
-    border-radius: 30px;
-    height: 170px;
-}
-
-.supplementaryCardSubText {
-    display: flex;
-    flex-direction: column; /* Stacks the p tags vertically */
-    align-items: center;    /* Centers the p tags horizontally */
-    justify-content: center; /* Centers them vertically within the div */
-    width: 100%;            /* Ensures it takes up the full width of the parent */
-}
-
-/* Optional: Clean up default margins for a tighter look */
-.supplementaryCardSubText p {
-    margin: 2px 0;
-}
-
-.contributionCardSubTitle{
-    font-weight: bold;
-    margin: auto;
-}
-
-.contributionCardSubTextNum{
-    margin: auto;
-    font-weight: bold;
-    font-size: 200%;
-}
-
-.awardContentCard {
-    margin: 0.5%; 
-    margin-top: 2%;
-    padding: 1%;
-    background-color: #F9F7F7;
-    color: #112D4E;
-    border-radius: 30px;
-}
-
-.awardCardSub{
-    display: grid;
-    place-items: center; 
-    text-align: center;
-    justify-content: center;
-    background: #112D4E;
-    color: #DBE2EF;
-    margin: 1%;
-    padding: auto;
-    border-radius: 30px;
-    height: 80px;
-    width: 220px;
-}
-
-.awardCardTitle{
-    color: #F9F7F7;
-    font-size: 100%;
-    font-weight: bold;
-    margin: auto;
-}
-
-.awardCardSubTitle{
-    font-weight: bold;
-    margin: auto;
-}
-
-.journeyTitle{
-    margin-top: 3%;
-}
-/*experience.html ends*/
-
-/*contactMe.html starts*/
-
-.feedbackCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    margin: 0.5%; 
-    padding: 2%;
-    height: 550px;
-    background-color: #112D4E;
-    color: #F9F7F7;
-    border-radius: 30px;
-}
-
-.feedbackText{
-    font-weight: bold;
-}
-
-.feedbackName{
-    font-size: 120%;
-}
-
-/*contactMe.html ends*/
-
-
-/**/
-/* Default styles for desktop */
-nav {
-  display: flex; /* Or other layout */
-}
-
-nav a {
-  display: inline-block;
-  padding: 14px 16px;
-}
-
-/* Hide hamburger icon on larger screens */
-nav .icon {
-  display: none;
-}
-
-.icon.Mobile{
-    display: none;
-}
-
-.icon{
-    color: #F9F7F7;
-}
-
-.icon1{
-    display: none;
-}
-
-.workHiltiTitle{
-    margin-top: 8%;
-}
-
-@media (max-width: 1330px){
-    .laptop {
-        height: 180px;
-    }
-}
-
-@media (max-width:){
-
-}
-
-@media screen and (max-width: 1330) {
-    .navBtn {
-        font-size: 100%;
-        width: 200px;
-        font-weight: bold;
-    }
-
-    .aboutMeContentTextCard {
-        text-align: center;
-        margin: 0.5%; 
-        padding: 0.5%;
-        background-color: #112D4E;
-        color: #ffffff;
-        border-radius: 30px;
-        width: 400px;
-    }
-}
-
-.phoneContainer col shadow-sm{
-    text-align: center;
-    margin: 0.5%;
-    padding: 0.5%;
-    height: 50%;
-    align-items: center;
 }
 
 .phone {
@@ -580,22 +123,418 @@ nav .icon {
     height: 180px;
 }
 
+.extraProjectCard {
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.5%;
+}
 
+.centered-row {
+    justify-content: center;
+}
 
-/* Styles for smaller screens */
+.section-heading {
+    margin-top: 2%;
+}
+
+.work-section-title {
+    margin-top: 5%;
+}
+
+/* ======= LAYOUT HELPERS ======= */
+.row {
+    margin: 10px;
+}
+
+.col-sm-3,
+.col-sm-4 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.btn {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.btn-hilti {
+    color: #DBE2EF;
+    background: #D2051E;
+}
+
+.btn-primary-dark {
+    color: #DBE2EF;
+    background: #112D4E;
+}
+
+.bg-nav {
+    background: #112D4E;
+}
+
+.bg-page {
+    background: #F9F7F7;
+}
+
+.profile-img {
+    width: 300px;
+}
+
+.feedback-img {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.journey-heading {
+    color: #F9F7F7;
+}
+
+.journey-heading-bold {
+    color: #F9F7F7;
+    font-weight: bold;
+}
+
+.section-heading-dark {
+    color: #112D4E;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.source-heading {
+    color: #F9F7F7;
+    font-weight: bold;
+}
+
+/* ======= COLLAPSIBLE SECTIONS ======= */
+.hidden-section {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
+}
+
+.hidden-section.show,
+.hidden-section.show1,
+.hidden-section.show2 {
+    max-height: 7000px;
+    opacity: 1;
+}
+
+.toggle-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 35px;
+    background: #112D4E;
+    color: #DBE2EF;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: #1a3d5f;
+}
+
+.toggle-btn:active {
+    transform: scale(0.98);
+}
+
+.toggle-btn::after {
+    content: ' ▼';
+    margin-left: 8px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn.active::after,
+.toggle-btn.active1::after,
+.toggle-btn.active2::after {
+    transform: rotate(180deg);
+}
+
+/* ======= ABOUT ME ======= */
+.whatIDoTitle {
+    font-weight: 600;
+    font-size: 120%;
+}
+
+.skillAndToolsContent {
+    background: #DBE2EF;
+    color: #112D4E;
+    margin: 3%;
+    padding: 3%;
+    border-radius: 30px;
+}
+
+.skillAndToolsContentText {
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+    padding: 3.5%;
+    font-size: 120%;
+}
+
+.skills-container {
+    width: 100%;
+    padding: 10px;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-item p {
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #112D4E 0%, #3F72AF 100%);
+    border-radius: 10px;
+    transition: width 0.8s ease;
+    box-shadow: 0 2px 4px rgba(17, 45, 78, 0.3);
+    animation: fillBar 1.5s ease-out;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0%;
+    }
+}
+
+.aboutMeContentCard {
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.5%;
+    background-color: #112D4E;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 30%;
+}
+
+.aboutMeContentTextCard {
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.5%;
+    background-color: #112D4E;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 22%;
+}
+
+.journeyCard {
+    background-color: #112D4E;
+    padding: 5%;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.myJourneyContentCard {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.5%;
+    background-color: #F9F7F7;
+    color: #112D4E;
+    border-radius: 30px;
+    width: 22%;
+    height: 150px;
+}
+
+.myJourneyContentTitle {
+    font-weight: bold;
+    font-size: 120%;
+    margin-bottom: 0.05rem;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.myJourneyContentText {
+    font-size: 80%;
+    margin-top: 0.05rem;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.seeMoreBtn {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #F9F7F7;
+    width: 50%;
+    padding: 1% 0.01%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======= EXPERIENCE ======= */
+.supplementaryRoleContentCard {
+    text-align: center;
+    margin: 0.5%;
+    padding: 0.5%;
+    background-color: #F9F7F7;
+    color: #112D4E;
+    border-radius: 30px;
+    width: 30%;
+}
+
+.supplementaryCardTitle {
+    color: #112D4E;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+.supplementaryCardSub {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background: #112D4E;
+    color: #DBE2EF;
+    margin: 3%;
+    border-radius: 30px;
+    height: 170px;
+}
+
+.supplementaryCardSubText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.supplementaryCardSubText p {
+    margin: 2px 0;
+}
+
+.contributionCardSubTitle {
+    font-weight: bold;
+    margin: auto;
+}
+
+.contributionCardSubTextNum {
+    margin: auto;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.awardContentCard {
+    margin: 0.5%;
+    margin-top: 2%;
+    padding: 1%;
+    background-color: #F9F7F7;
+    color: #112D4E;
+    border-radius: 30px;
+}
+
+.awardCardSub {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    background: #112D4E;
+    color: #DBE2EF;
+    margin: 1%;
+    border-radius: 30px;
+    height: 80px;
+    width: 220px;
+}
+
+.awardCardTitle {
+    color: #F9F7F7;
+    font-size: 100%;
+    font-weight: bold;
+    margin: auto;
+}
+
+.journeyTitle {
+    margin-top: 3%;
+}
+
+.workHiltiTitle {
+    margin-top: 8%;
+}
+
+.navBtn.active-page {
+	font-weight: bold;
+}
+
+/* ======= FEEDBACK ======= */
+.feedbackCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 0.5%;
+    padding: 2%;
+    height: 550px;
+    background-color: #112D4E;
+    color: #F9F7F7;
+    border-radius: 30px;
+}
+
+.feedbackText {
+    font-weight: bold;
+}
+
+.feedbackName {
+    font-size: 120%;
+}
+
+.feedbackText-small {
+    font-size: 80%;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 1330px) {
+    .laptop {
+        height: 180px;
+    }
+
+    .navBtn {
+        font-size: 100%;
+        width: 200px;
+        font-weight: bold;
+    }
+
+    .aboutMeContentTextCard {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 1205px) {
-    nav a{ /* Hide links except the first one */
+    nav a {
         display: none;
     }
 
     nav a.icon {
-        display: block; /* Show the hamburger icon */
+        display: block;
     }
 
-    /* Make nav behave differently on mobile */
     nav.responsive {
         position: absolute;
-        display: absolute;
     }
 
     nav.responsive a {
@@ -604,54 +543,36 @@ nav .icon {
         text-align: left;
     }
 
-    .icon1{
+    .icon1 {
         color: #F9F7F7;
     }
 
-    .heroSection{
-        margin-top: 10%;
-    }
-    .workHiltiTitle{
+    .heroSection {
         margin-top: 10%;
     }
 
-    .journeyTitle{
+    .workHiltiTitle {
+        margin-top: 10%;
+    }
+
+    .journeyTitle {
         margin-top: 5%;
     }
 
-    .feedbackCard{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
+    .feedbackCard {
         text-align: center;
-        padding: 2%;
-        height: 550px;
     }
 
     .aboutMeContentCard {
-        text-align: center;
-        margin: 0.5%; 
-        padding: 0.5%;
-        background-color: #112D4E;
-        color: #ffffff;
-        border-radius: 30px;
         width: 80%;
     }
 
     .aboutMeContentTextCard {
-        text-align: center;
-        margin: 0.5%; 
-        padding: 0.5%;
-        background-color: #112D4E;
-        color: #ffffff;
-        border-radius: 30px;
         width: 100%;
     }
 }
-/**/
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
     .workHiltiTitle {
         margin-top: 20%;
     }
@@ -660,35 +581,14 @@ nav .icon {
         width: 100%;
     }
 
-    .aboutMeContentCard {
-        text-align: center;
-        margin: 0.5%; 
-        padding: 0.5%;
-        background-color: #112D4E;
-        color: #ffffff;
-        border-radius: 30px;
-        width: 100%;
-    }
-
+    .aboutMeContentCard,
     .supplementaryRoleContentCard {
-        text-align: center;
-        margin: 0.5%; 
-        padding: 0.5%;
-        background-color: #F9F7F7;
-        color: #112D4E;
-        border-radius: 30px;
         width: 100%;
     }
 }
 
-@media (max-width: 851px){
+@media (max-width: 851px) {
     .aboutMeContentTextCard {
-        text-align: center;
-        margin: 0.5%; 
-        padding: 0.5%;
-        background-color: #112D4E;
-        color: #ffffff;
-        border-radius: 30px;
         width: 100%;
     }
 }
@@ -696,17 +596,17 @@ nav .icon {
 @media (max-width: 768px) {
     .phone {
         height: 400px;
-    } 
+    }
 
     .laptop {
         height: 200px;
     }
 
-    .workHiltiTitle{
+    .workHiltiTitle {
         margin-top: 25%;
     }
 
-    .journeyTitle{
+    .journeyTitle {
         margin-top: 10%;
     }
 }
@@ -720,8 +620,7 @@ nav .icon {
         height: 200px;
     }
 
-    .workHiltiTitle{
+    .workHiltiTitle {
         margin-top: 30%;
     }
-
 }

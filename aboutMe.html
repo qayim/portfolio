@@ -5,21 +5,15 @@
 	<title>About Qayim</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="index.css">
 	<link rel="icon" href="img/icon.ico">
 </head>
 
-
 <body class="bg-light">
 
-	<!--Navbar start-->
-	<nav class="navbar fixed-top shadow-sm" style="background: #112D4E">
+	<nav class="navbar fixed-top shadow-sm bg-nav">
 		<div class="container-lg">
 			<a href="javascript:void(0);" class="icon1" onclick="myFunction()">
 				<p>=</p>
@@ -28,7 +22,7 @@
 		<div class="container-lg">
 			<a href="https://qayim.github.io/portfolio" class="navBtn">Homepage</a>
 			<a href="https://qayim.github.io/portfolio/projects" class="navBtn">Projects</a>
-			<a href="https://qayim.github.io/portfolio/aboutMe" class="navBtn" style="font-weight: bold;">About Me</a>
+			<a href="https://qayim.github.io/portfolio/aboutMe" class="navBtn active-page">About Me</a>
 			<a href="https://qayim.github.io/portfolio/experience" class="navBtn">Experiences</a>
 			<a href="https://qayim.github.io/portfolio/contactMe" class="navBtn">Contact Me</a>
 		</div>
@@ -38,16 +32,13 @@
 			</a>
 		</div>
 	</nav>
-	<!--Navbar ends-->
 
-	<!--Section 1: Hero and Projects-->
-	<section class="home py-5" style="background: #F9F7F7">
-		<!--Hero starts-->
+	<section class="home py-5 bg-page">
 		<div class="container-lg heroSection">
 			<div class="row min-vh-50 heroBox">
 				<div class="col-xl-4 mt-5 mt-md-0">
 					<div class="home-img">
-						<img src="img/profilepic.png" alt="profile img" style="width:300px">
+						<img src="img/profilepic.png" alt="Qayim Norizan profile photo" class="profile-img">
 					</div>
 				</div>
 				<div class="col-xl-8 mt-5 mt-md-0">
@@ -59,29 +50,24 @@
 							<h2 class="fs-4">Senior Lead IT Business Analyst | Process Optimizer | Professional Why-Asker</h2>
 						</div>
 						<p class="mt-4 heroText">
-							I'm Qayim, a business analyst who thrives at the intersection of tech, logic, and people. 
-							I translate 'business speak' into 'tech speak' and vice versa so projects actually get 
+							I'm Qayim, a business analyst who thrives at the intersection of tech, logic, and people.
+							I translate 'business speak' into 'tech speak' and vice versa so projects actually get
 							built right the first time (mostly - 95% success rate).
 						</p>
-						<p> </p>
-
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--Hero ends-->
 
-		<!--What I Do STARTS-->
 		<div class="container">
-			<div class="col-lg-8" style="margin-top: 2%;">
+			<div class="col-lg-8 section-heading">
 				<div class="section-title">
 					<h2 class="fw-bold mb-5">What I Do</h2>
 				</div>
 			</div>
 		</div>
 
-		
-		<div class="row" style="justify-content: center;">
+		<div class="row centered-row">
 			<div class="col-sm-12 col-md-3 aboutMeContentTextCard">
 				<p class="whatIDoTitle">Requirement Whisperer</p>
 				<p>Uncover what stakeholders really need (even when they don't know yet)</p>
@@ -99,19 +85,16 @@
 				<p>Turn SQL queries and spreadsheets into plain English insights</p>
 			</div>
 		</div>
-		<!--What I Do ENDS-->
 
-		<!--Skills & Tools STARTS-->
 		<div class="container">
-			<div class="col-lg-8" style="margin-top: 2%;">
+			<div class="col-lg-8 section-heading">
 				<div class="section-title">
 					<h2 class="fw-bold mb-5">Skills & Tools</h2>
 				</div>
 			</div>
 		</div>
 
-		
-		<div class="row" style="justify-content: center;">
+		<div class="row centered-row">
 			<div class="col-sm-12 col-xl-3 aboutMeContentCard">
 				<p class="fs-3">Technical</p>
 				<div class="skills-container">
@@ -169,7 +152,6 @@
 				</div>
 			</div>
 
-
 			<div class="col-sm-12 col-xl-3 aboutMeContentCard">
 				<div class="row-cols-auto">
 					<p class="fs-3">Soft Skills</p>
@@ -185,19 +167,16 @@
 				</div>
 			</div>
 		</div>
-		<!--Skill & Tools ENDS-->
 
-		<!--Why Work With Me STARTS-->
 		<div class="container">
-			<div class="col-lg-8" style="margin-top: 2%;">
+			<div class="col-lg-8 section-heading">
 				<div class="section-title">
 					<h2 class="fw-bold mb-5">Why Work with Me?</h2>
 				</div>
 			</div>
 		</div>
 
-		
-		<div class="row" style="justify-content: center;">
+		<div class="row centered-row">
 			<div class="col-sm-12 col-md-3 aboutMeContentTextCard">
 				<p class="whatIDoTitle">Why Enthusiast</p>
 				<p>Ask 'why' until we hit the root problem</p>
@@ -215,23 +194,20 @@
 				<p>Communicate to all stakeholders even the smallest progress</p>
 			</div>
 		</div>
-		<!--Why Work With Me ENDS-->
 
-		<!--My Journey starts-->
 		<div class="container">
-			<div class="col-lg-8" style="margin-top: 2%;">
+			<div class="col-lg-8 section-heading">
 				<div class="section-title">
 					<h2 class="fw-bold mb-5">My Journey</h2>
 				</div>
 			</div>
 		</div>
 
-	<!--ITM journey starts-->
 		<div class="container">
 			<div class="col-lg journeyCard">
-				<h1 style="color: #F9F7F7">2025 - Present</h1>
-				<h1 style="color: #F9F7F7; font-weight: bold;">Senior Lead IT Business Analyst @ ITM </h1>
-				<div class="row" style="margin-top: 2%; margin-bottom: 2%; justify-content: center;">
+				<h1 class="journey-heading">2025 - Present</h1>
+				<h1 class="journey-heading-bold">Senior Lead IT Business Analyst @ ITM</h1>
+				<div class="row centered-row" style="margin-top: 2%; margin-bottom: 2%;">
 					<div class="col-sm-12 col-md-3 myJourneyContentCard">
 						<p class="myJourneyContentTitle">The Foundation</p>
 						<p class="myJourneyContentText">Transitioned from executing tasks to owning the Functional Solution Design for enterprise-level applications</p>
@@ -250,20 +226,16 @@
 					</div>
 				</div>
 				<div class="seeMoreBtn">
-					<a href="https://qayim.github.io/portfolio/experience">
-						See more
-					</a>
+					<a href="https://qayim.github.io/portfolio/experience">See more</a>
 				</div>
 			</div>
 		</div>
-		<!--ITM journey ends-->
 
-		<!--Hilti journey starts-->
 		<div class="container">
 			<div class="col-lg journeyCard">
-				<h1 style="color: #F9F7F7">2023 - 2025</h1>
-				<h1 style="color: #F9F7F7; font-weight: bold;">IT Business Analyst @ HILTI </h1>
-				<div class="row" style="margin-top: 2%; margin-bottom: 2%; justify-content: center;">
+				<h1 class="journey-heading">2023 - 2025</h1>
+				<h1 class="journey-heading-bold">IT Business Analyst @ HILTI</h1>
+				<div class="row centered-row" style="margin-top: 2%; margin-bottom: 2%;">
 					<div class="col-sm-12 col-md-3 myJourneyContentCard">
 						<p class="myJourneyContentTitle">CX Score Improvements</p>
 						<p class="myJourneyContentText">From 63% to 85% as of September 2025</p>
@@ -282,20 +254,16 @@
 					</div>
 				</div>
 				<div class="seeMoreBtn">
-					<a href="https://qayim.github.io/portfolio/experience">
-						See more
-					</a>
+					<a href="https://qayim.github.io/portfolio/experience">See more</a>
 				</div>
 			</div>
 		</div>
-		<!--Hilti journey ends-->
 
-		<!--Finexus journey starts-->
 		<div class="container">
 			<div class="col-lg journeyCard">
-				<h1 style="color: #F9F7F7">2022 - 2023</h1>
-				<h1 style="color: #F9F7F7; font-weight: bold;">Full Stack Developer @ Finexus </h1>
-				<div class="row" style="margin-top: 2%; margin-bottom: 2%; justify-content: center;">
+				<h1 class="journey-heading">2022 - 2023</h1>
+				<h1 class="journey-heading-bold">Full Stack Developer @ Finexus</h1>
+				<div class="row centered-row" style="margin-top: 2%; margin-bottom: 2%;">
 					<div class="col-sm-12 col-md-3 myJourneyContentCard">
 						<p class="myJourneyContentTitle">App Revamp</p>
 						<p class="myJourneyContentText">Revamped 2 major fintech apps (Kayaaku & GoPayz)</p>
@@ -314,79 +282,13 @@
 					</div>
 				</div>
 				<div class="seeMoreBtn">
-					<a href="https://qayim.github.io/portfolio/experience">
-						See more
-					</a>
+					<a href="https://qayim.github.io/portfolio/experience">See more</a>
 				</div>
 			</div>
 		</div>
-		<!--Finexus journey ends-->
-
-		
-		<!--My Journey ends-->
-
 	</section>
 
-	<!-- JavaScript for toggle -->
-	<script>
-		function toggleExtras() {
-			const section = document.getElementById('hiddenSection');
-			const btn = document.getElementById('toggleBtn');
-			
-			section.classList.toggle('show');
-			btn.classList.toggle('active');
-			
-			if (section.classList.contains('show')) {
-				btn.textContent = 'Show Less Projects';
-			} else {
-				btn.textContent = 'Show More Projects';
-			}
-		}
-
-		function toggleExtras1() {
-			const section = document.getElementById('hiddenSection1');
-			const btn = document.getElementById('toggleBtn1');
-			
-			section.classList.toggle('show1');
-			btn.classList.toggle('active1');
-			
-			if (section.classList.contains('show1')) {
-				btn.textContent = 'Show Less';
-			} else {
-				btn.textContent = 'Show More';
-			}
-		}
-
-		function myFunction() {
-			window.scrollTo(0, 0);
-			var x = document.getElementsByTagName("nav")[0]; // Get the <nav> element
-			var nav0 = document.getElementsByClassName("navBtn")[0];
-			var nav1 = document.getElementsByClassName("navBtn")[1];
-			var nav2 = document.getElementsByClassName("navBtn")[2];
-			var nav3 = document.getElementsByClassName("navBtn")[3];
-			var nav4 = document.getElementsByClassName("navBtn")[4];
-			var icon = document.getElementsByClassName("icon")[0]
-
-			if (x.className.indexOf("responsive") == -1) {
-				x.className += " responsive";
-				nav0.className += " Mobile";
-				nav1.className += " Mobile";
-				nav2.className += " Mobile";
-				nav3.className += " Mobile";
-				nav4.className += " Mobile";
-				icon.className += " Mobile";
-			} else {
-				x.className = x.className.replace(" responsive", "");
-				nav0.className = nav0.className.replace(" Mobile", "");
-				nav1.className = nav1.className.replace(" Mobile", "");
-				nav2.className = nav2.className.replace(" Mobile", "");
-				nav3.className = nav2.className.replace(" Mobile", "");
-				nav4.className = nav4.className.replace(" Mobile", "");
-				icon.className = icon.className.replace(" Mobile", "");
-			}
-		}
-	</script>
-	
+	<script src="js/main.js"></script>
 </body>
 
 </html>
